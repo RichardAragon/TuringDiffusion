@@ -1,4 +1,4 @@
-# TuringDiffusion
+# Turing Diffusion
 
 Note that this implementation follows the original paper by Diederik Kingma and Max Welling "Auto-Regressive Flow Models" (https://arxiv.org/pdf/1605.09012.pdf) for the 'original' version of NCSSF, as well as the improvements suggested by Salimans et al. In their paper "Improving Normalizing Flows with a New Gradient Estimation Technique" (https://arxiv.org/abs/1711.05993). Finally, I added my own interpretation of the Neural Cumulative Standard Normalizing Flow proposed by Song et al. ("Neural Cumulative Standard Normalising Flows", https://arxiv.org/abs/2005.12212) which has some similarities but also notable differences compared to previous approaches. You can switch between these three variants using the self.ncsn_type attribute. Note that the 'ncsnf' version is significantly slower than the others due to its more complex formulas involving erf and erfc functions, so use it sparingly!
 
